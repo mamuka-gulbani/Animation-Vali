@@ -1,0 +1,37 @@
+.orange-box {
+	background-color: orange;
+	width: 600px;
+	height: 600px;
+	position: relative;
+}
+.green-box {
+	background-color: darkgreen;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(90deg);
+	white-space: nowrap;
+	font-size: 39px;
+	color: maroon;
+	text-transform: uppercase;
+}
+.orange-box:hover {
+	background-color: pink;
+}
+.orange-box:hover .green-box {
+	background-color: maroon;
+}
+.orange-box:hover .text {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(0deg);
+	color: green;
+}
